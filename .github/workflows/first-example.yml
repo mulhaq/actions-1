@@ -10,14 +10,17 @@ jobs:
           uses: actions/checkout@v6
      
 
-        - name: Welcome Message
-          run: echo "My First GH Action Job"
+        - name: List and Readfiles
+          run: |
+               echo "My First GH Action Job"
+               ls -ltra
+               cat README.md
 
-        - name: List Files
-          run: ls
+  #      - name: List Files
+  #        run: ls
 
-        - name: Read File
-          run: cat README.md
+  #      - name: Read File
+  #        run: cat README.md
 
 
            
